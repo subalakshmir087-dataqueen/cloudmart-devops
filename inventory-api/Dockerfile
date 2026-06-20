@@ -1,4 +1,5 @@
-FROM python:3.12-slim
+FROM python:3.12-alpine
+RUN pip install --upgrade pip
 WORKDIR /app
 COPY app.py .
 RUN pip install flask
